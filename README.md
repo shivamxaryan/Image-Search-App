@@ -5,7 +5,7 @@ It uses the [Unsplash-API](https://unsplash.com/developers) to fetch image from 
 
 ## How to uses
 
-* Type in the serch box
+* Type in the serch box.
 * Click on submit to get the image.
 
 ## How to download image
