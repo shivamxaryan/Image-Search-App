@@ -6,7 +6,8 @@
 }
 
 body{
-    line-height:1.6;
+    background: #39297b;
+    color: #fff;
 }
 
 h1{
@@ -45,8 +46,7 @@ form button{
     font-size: 18px;
     border:0;
     outline: 0;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+    border-radius: 8px;
     cursor: pointer;
 }
 
@@ -57,7 +57,6 @@ form button{
 
 #show-more-btn{
     background-color: #ff3929;
-    font-size: 18px;
     color: #fff;
     border:0;
     outline: 0;

@@ -1,8 +1,8 @@
-const accessKey = "ix04iwI9RJcK836P5gOtxr0UAziSMhOSeZ5gcTMypcw"
+const accessKey = "YRXjgr3REMubeWcMC-zg92kHRrKXrZjLrVMylPInI1c";
 
-const searchForm=document.querySelector("search-form")
+const searchForm=document.getElementById("search-form")
 const searchBox=document.getElementById("search-box")
-const searchResult=document.getElementById(".search-result")
+const searchResult=document.getElementById("search-result")
 const showMoreBtn=document.getElementById("show-more-btn")
 
 let keyword="";
@@ -12,13 +12,12 @@ console.log("h1");
 
 async function searchImages(){
     keyword=searchBox.value;
-    //allocating dynamically 
     const url=`https://api.unsplash.com/search/photos?page=${page}&query=${keyword}&client_id=${accessKey}&per_page=12`;
 
     const response=await fetch(url);
     const data=await response.json();
 
-    console.log("h2");
+    console.log(data);
 
     const results=data.results;
 
