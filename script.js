@@ -8,7 +8,6 @@ const showMoreBtn=document.getElementById("show-more-btn")
 let keyword="";
 let page=1;
 
-console.log("h1");
 
 async function searchImages(){
     keyword=searchBox.value;
@@ -17,7 +16,9 @@ async function searchImages(){
     const response=await fetch(url);
     const data=await response.json();
 
-    console.log(data);
+    if(page===1){
+        searchResult.innerHTML="";
+    }
 
     const results=data.results;
 
